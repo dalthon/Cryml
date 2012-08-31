@@ -1,0 +1,16 @@
+<integer        number=1234/>
+<attr:double    number=3.14/>
+<attr:string    single:quoted='single quoted string!'/>
+<escaped:string single:quoted='sin"gle \'quoted\' stri"ng!'/>
+<attr:string    double:quoted="double quoted string!"/>
+<escaped:string double:quoted="dou\"ble 'quoted' stri\"ng!"/>
+<attribute      attr:unnamespaced=@attribute_name/>
+<attribute      attr:namespaced=@attribute:name/>
+<attr:scope     empty:scope=rb{}/>
+<attr:scope     not_empty:scope=rb{ not empty ok?! }/>
+<attr:scope     balanced:scope=rb{ balanced, { so i dont need to be escaped!} }/>
+<attr:scope     escaped:scope=rb{ escaped, so i dont \{ need to be balanced! }/>
+<attr:scope     balanced_and_escaped:scope=rb{ escaped, {so i \{ dont need to be } balanced every time!! }/>
+<bool:true      value=true/>
+<bool:false     value=false/>
+<nUlL:null_tag value=null/>

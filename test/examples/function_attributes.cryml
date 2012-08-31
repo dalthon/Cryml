@@ -1,0 +1,13 @@
+<function:attributes
+ *expr:function       = expression( 2 + 10.0 )
+  par:function        = parenthesis((42) )
+ *empty:function      = empty_function()
+  numeric:function    = numeric_function(1, 2, 3, 3.14, 628e-2, 3.14e+1)
+ *string:function     = cat('\'single\' string', "\"double\" string", "strings!")
+  scope:function      = scoped(rb{ class << self; self; end }, rb{ 10.times{ |x| puts x } }, rb{}, "something else")
+ *boolean:function    = trues_and_false(true, false, null, false, true)
+  attributes:function = attributes(@attr, @ns:attr, @true, @null)
+ *func:function       = functions(exit(), atoi("1234"), print("string %40s", @name), wharever([1, 2, 3], {'key': 'value'}))
+  nested_arrays:func  = nested(1, [2], [3, 4], [5, [6]])
+ *hashed:function     = HASH(99, {"key" : 123}, {'one': 1, 'two': 2.0})
+/>

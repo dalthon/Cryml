@@ -1,0 +1,13 @@
+<array:attributes
+ *expr:array       = [ 2 + 10.0 ]
+  par:array        = [ (42) ]
+ *empty:array      = []
+  numeric:array    = [1, 2, 3, 3.14, 628e-2, 3.14e+1]
+ *string:array     = ['\'single\' string', "\"double\" string", "strings!"]
+  scope:array      = [rb{ class << self; self; end }, rb{ 10.times{ |x| puts x } }, rb{}, "something else"]
+ *boolean:array    = [true, false, null, false, true]
+  attributes:array = [@attr, @ns:attr, @true, @null]
+ *function:array   = [exit(), atoi("1234"), print("string %40s", @name), wharever([1, 2, 3], {'key': 'value'})]
+  nested:arrays    = [1, [2], [3, 4], [5, [6]]]
+ *hashed:array     = [99, {"key" : 123}, {'one': 1, 'two': 2.0}]
+/>

@@ -1,0 +1,17 @@
+<unaryattr
+    positive:integer  = +123
+    negative:integer  = -321
+    positive:double   = +3.14
+    negative:double   = -3.14
+    positive:attr     = +@attrib
+    negative:attr     = -@ute
+    not:attr          = !@not
+    positive:function = +positive(true)
+    negative:function = -negative(false)
+    not:function      = !not(1)
+    positive:scope    = +rb{some code}
+    negative:scope    = -rb{some code}
+    not:scope         = !rb{some code}
+    not:true          = !false
+    not:false         = !true
+/>

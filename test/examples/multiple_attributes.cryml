@@ -1,0 +1,18 @@
+<tag
+    integer=1234
+   *double=3.14
+    single:quoted='single quoted string!'
+   *single:escaped='sin"gle \'quoted\' stri"ng!'
+    double:quoted="double quoted string!"
+   *double:escaped="dou\"ble 'quoted' stri\"ng!"
+    attr:unnamespaced=@attribute_name
+   *attr:namespaced=@attribute:name
+    empty:scope=rb{}
+   *not_empty:scope=rb{ not empty ok?! }
+    balanced:scope=rb{ balanced, { so i dont need to be escaped!} }
+   *escaped:scope=rb{ escaped, so i dont \{ need to be balanced! }
+    balanced_and_escaped:scope=rb{ escaped, {so i \{ dont need to be } balanced every time!! }
+   *true_value=true
+    false_value=false
+   *null_value=null
+/>

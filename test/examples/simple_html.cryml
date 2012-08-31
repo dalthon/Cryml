@@ -1,0 +1,10 @@
+<html>
+  <head><title>Cryml Rocks!</title>
+  </head>
+  <body>
+    <h1 class="with_style">Cryml is almost HTML compatible!</h1>
+    <p>Doesn't have any %${{}}</p>
+    <br/>
+    <p>mixed between tag's content!</p>
+  </body>
+</html>

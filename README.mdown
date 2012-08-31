@@ -1,0 +1,19 @@
+# Cryml
+
+Want to contribute?
+
+Just clone the project, install latest bison, http://ftp.gnu.org/gnu/bison/ and CUnit, http://sourceforge.net/projects/cunit/
+
+
+To run the test you simple have to run:
+
+    make {clean,test}
+
+Don't know where and how to start contributing? Is simple just run the following commands on your shell and follow along.
+
+    grep -inre TODO src/
+    grep -inre TODO test/
+
+Any questions? Join us on our mailing list:
+
+cryml@googlegroups.com

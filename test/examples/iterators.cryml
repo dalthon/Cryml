@@ -1,0 +1,4 @@
+<each attr='user' in=['hd', 'dlt', 2, 5 + 7]>
+    <@user/> -
+</each>
+End of loop

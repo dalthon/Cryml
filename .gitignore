@@ -1,0 +1,12 @@
+build
+build/*
+CUnit*.xml
+.DS_Store
+*/.DS_Store
+/**/*/.DS_Store
+tmp/*
+bin/*
+benchmark/*
+src/generated/syntactic.output
+src/generated/syntactic.dot
+*.o

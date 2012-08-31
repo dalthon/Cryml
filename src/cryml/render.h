@@ -1,0 +1,10 @@
+int CryRender_render(CryContext *context, FILE *output);
+int CryRender_render_tag(CryTag parent_tag, CryTag tag, CryContext *context, FILE *output);
+int CryRender_render_visible_attributes(CryContext *context, FILE *output);
+int CryRender_eval_tag_attributes(CryTag tag, CryContext *context);
+int CryRender_eval_tags_childs_function(CryTag tag, CryContext *context, FILE * output);
+int CryRender_tag_group(CryTag parent_tag, CryTag tag, CryContext *context, FILE *output);
+int CryRender_tag(CryTag parent_tag, CryTag tag, CryContext *context, FILE *output);
+int CryRender_text_tag(CryTag parent_tag, CryTag tag, CryContext *context, FILE *output);
+int CryRender_attr_tag(CryTag parent_tag, CryTag tag, CryContext *context, FILE *output);
+int CryRender_data_tag(CryTag parent_tag, CryTag tag, CryContext *context, FILE *output);

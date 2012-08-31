@@ -1,0 +1,11 @@
+<native:expressions
+    arithmetic:without_parenthesis = { 1 + 17 * 3 /  7 - 2   % 3 }
+    arithmetic:with_parenthesis    = { 1 + 17 * 3 / (7 - 2)  % 3 }
+    arithmetic:with_unary          = { 1 + 17 *-3 /  7 - 2   % 3 }
+    arithmetic:indiferent_unary    = { +1 + 17 *+-+-3 /  7 - 2   % 3 }
+    arithmetic:stupid_unary        = {  1 + 17 *-+--3 /  7 - +2   % 3 }
+    comparable:greater             = {  123 > 12 + 3 && 1 >= 23 }
+    comparable:less                = {  123 < 12 + 3 || 1 <= 23 }
+    comparable:equal_diff          = {  123 + 2 * 321 ==  -2 - 123 * -321 != (123 + 2) * 321 }
+    boolean:not_expr               = {  true && ! 2 < 1 + -13 }
+/>

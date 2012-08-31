@@ -1,0 +1,67 @@
+<*funclib src="bin/lib_example_functions.so">
+    Aqui definem-se as funções count_args e uma outra que não me recordo agora
+</funclib>
+
+<if is=false then &>
+ FALSE WITH THEN
+</if>
+
+<if is={2 > 1} then>
+ TRUE WITH THEN
+ <@condition/>
+</if>
+
+<cryml:if is=false>
+ FALSE WITHOUT THEN
+
+  <else>
+    YEY! YEY! YEY! YEY! YEY! YEY! YEY! YEY! YEY! YEY! YEY! YEY! YEY!
+    <if is=false>
+        <else>
+            YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY!
+        </else>
+    </if>
+
+    <if is=true then>
+      YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY! YAY!
+    </if>
+
+  </else>
+</cryml:if>
+
+<if is=true &>
+ TRUE WITHOUT THEN
+</if>
+
+<attributes abc="def" asdasd="dsadas">
+  <@abc/> <@asdasd/>
+</attributes>
+
+<if is=1 greater_than=3 not_lower_than=4>
+    <then>1</then>
+    <else>2</else>
+    <then>3</then>
+    <else>4</else>
+    <then>1</then>
+    <else>2</else>
+    <then>3</then>
+    <else>4</else>
+</if>
+
+<function func_call=count_args(1, 2)/>
+<function func_call=count_args(1, 2)/>
+<ignore &>
+
+    <abc porcaria="aqui" i=3>
+        <@porcaria/>
+        <index is_leaking_here={@porcaria[1]} />
+    </abc>
+</ignore>
+
+<null attr=null attr={@attr} false=false/>
+
+<a href=$home_url>Link</a>
+
+<teste abc='def' x={1*2+2*3}>
+    <p def=@abc y={@x + 100}/>
+</teste>
